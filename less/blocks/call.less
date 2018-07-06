@@ -1,0 +1,73 @@
+.call {
+  padding-top: 50px;
+  padding-bottom: 80px;
+  color: #fff;
+  background-color: @orange;
+}
+
+.call__title {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 40px;
+  font-weight: 300;
+  
+  b {
+    font-weight: 700;
+  }
+}
+
+.call__form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+}
+
+.call__name {
+  width: 360px;
+  height: 46px;
+  margin-right: 30px;
+  text-align: center;
+  border-radius: 4px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: inset 0px 9px 9.7px 0.3px rgba(0, 0, 0, 0.19);
+  
+  &::placeholder {
+    opacity: 1;
+    color: #898989;
+  }
+}
+
+.call__phone {
+  width: 360px;
+  height: 46px;
+  margin-right: 30px;
+  text-align: center;
+  color: #fff;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.4);
+  
+  &::placeholder {
+    opacity: 1;
+  }
+}
+
+.call__btn {
+  width: 360px;
+  height: 46px;
+  color: #fff;
+  font: inherit;
+  border-radius: 4px;
+  border: 2px solid #fff;
+  .transition();
+  
+  &:hover,
+  &:active {
+    background-color: #fff;
+    color: @orange;
+    .transition();
+  }
+}
